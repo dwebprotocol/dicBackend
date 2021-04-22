@@ -27,7 +27,8 @@ async function start () {
  // console.log('The dTree key is:', base.key.toString('hex'))
 
   // Now we announce the dTree on the dWeb and it can be queried from anywhere
-  while (true) {
-    await replicate(base)
-  }
+  //while (true) {
+    //await replicate(base)
+    await replicate(db)
+  //}
 }
