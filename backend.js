@@ -26,5 +26,5 @@ async function start() {
   console.log('The dTree key is:', db.discoveryKey.toString('hex'))
 
   // Now announce on dWeb
-  await replicate(db)
+  await replicate(base)
 }
