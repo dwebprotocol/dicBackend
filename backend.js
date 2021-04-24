@@ -23,7 +23,7 @@ async function start() {
   await batch.flush()
   
   // Print dTree key
-  console.log('The dTree key is:', db.discoveryKey)
+  console.log('The dTree key is:' ,base.key.toString('hex') ,"  -----------------  ", base.discoveryKey.toString('hex'))
 
   // Now announce on dWeb
   await replicate(base)
